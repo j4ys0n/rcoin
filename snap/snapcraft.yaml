@@ -1,0 +1,21 @@
+name: rcoin
+version: git
+summary: A fullnode Ravencoin implementation for miners, wallets, and exchanges
+description: |
+  Rcoin is an alternative implementation of the ravencoin protocol, written in
+  node.js.
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: strict
+
+apps:
+  rcoin:
+    command: rcoin
+    plugs: [network, network-bind]
+
+parts:
+  rcoin:
+    source: .
+    plugin: nodejs
+    build-packages: [python, gcc]
+    node-engine: 8.0.0

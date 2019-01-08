@@ -1,0 +1,89 @@
+{
+  "name": "rcoin",
+  "version": "1.0.0",
+  "description": "Ravencoin bike-shed",
+  "license": "MIT",
+  "repository": "git://github.com/raven-community/rcoin.git",
+  "homepage": "https://github.com/raven-community/rcoin",
+  "bugs": {
+    "url": "https://github.com/raven-community/rcoin/issues"
+  },
+  "author": "Fedor Indutny <fedor@indutny.com>",
+  "contributors": [
+    "Christopher Jeffrey <chjjeffrey@gmail.com>",
+    "MSFTserver"
+  ],
+  "keywords": [
+    "rcoin",
+    "ravencoin",
+    "blockchain",
+    "cryptocurrency",
+    "wallet"
+  ],
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "rcfg": "~0.1.4",
+    "rclient": "~0.1.5",
+    "rcrypto": "~3.0.1",
+    "rdb": "~1.1.3",
+    "rdns": "~0.1.3",
+    "revent": "~0.1.3",
+    "rfile": "~0.1.3",
+    "rfilter": "~1.0.3",
+    "rheep": "~0.1.3",
+    "rinet": "~0.3.3",
+    "rlgr": "~0.1.4",
+    "rlru": "~0.1.4",
+    "rlst": "~0.1.3",
+    "rmutex": "~0.1.4",
+    "rsert": "~0.0.7",
+    "rsip": "~0.1.4",
+    "rsock": "~0.1.4",
+    "rsocks": "~0.2.3",
+    "rstring": "~0.3.4",
+    "rvnp": "~0.1.3",
+    "buffer-map": "~0.0.4",
+    "rufio": "~1.0.3",
+    "rupnp": "~0.2.4",
+    "bval": "~0.1.4",
+    "rweb": "~0.1.6",
+    "mrmr": "~0.1.4",
+    "n64": "~0.2.5"
+  },
+  "devDependencies": {
+    "rmocha": "^0.1.8"
+  },
+  "main": "./lib/rcoin.js",
+  "bin": {
+    "rcoin": "./bin/rcoin",
+    "rcoin-node": "./bin/node",
+    "rcoin-spvnode": "./bin/spvnode",
+    "rwallet": "./bin/rwallet"
+  },
+  "scripts": {
+    "browserify": "browserify -s rcoin lib/rcoin-browser.js | uglifyjs -c > rcoin.js",
+    "clean": "rm -f {browser/,}{rcoin.js,rcoin-worker.js,app.js,worker.js}",
+    "docs": "jsdoc -c jsdoc.json",
+    "lint": "eslint $(cat .eslintfiles) || exit 0",
+    "lint-ci": "eslint $(cat .eslintfiles)",
+    "lint-file": "eslint",
+    "test": "rmocha --reporter spec test/*.js",
+    "test-browser": "NODE_BACKEND=js rmocha --reporter spec test/*.js",
+    "test-file": "rmocha --reporter spec",
+    "test-file-browser": "NODE_BACKEND=js rmocha --reporter spec",
+    "test-ci": "istanbul cover --report lcovonly node_modules/.bin/rmocha -- --reporter spec test/*-test.js",
+    "webpack": "webpack --mode production --config webpack.browser.js",
+    "webpack-browser": "webpack --mode production --config webpack.browser.js",
+    "webpack-compat": "webpack --mode production --config webpack.compat.js",
+    "webpack-app": "webpack --mode production --config webpack.app.js"
+  },
+  "browser": {
+    "./lib/hd/nfkd": "./lib/hd/nfkd-compat.js",
+    "./lib/hd/wordlist": "./lib/hd/wordlist-browser.js",
+    "./lib/workers/child": "./lib/workers/child-browser.js",
+    "./lib/workers/parent": "./lib/workers/parent-browser.js",
+    "./lib/rcoin": "./lib/rcoin-browser.js"
+  }
+}
