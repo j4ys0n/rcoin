@@ -2,8 +2,8 @@
 
 const assert = require('assert');
 const path = require('path');
-const fs = require('rfile');
-const bio = require('rufio');
+const fs = require('bfile');
+const bio = require('bufio');
 const Block = require('../../lib/primitives/block');
 const MerkleBlock = require('../../lib/primitives/merkleblock');
 const Headers = require('../../lib/primitives/headers');

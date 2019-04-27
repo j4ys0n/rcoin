@@ -3,7 +3,7 @@
 const assert = require('assert');
 const FullNode = require('../../lib/node/fullnode');
 const Network = require('../../lib/protocol/network');
-const Logger = require('rlgr');
+const Logger = require('blgr');
 
 class NodeContext {
   constructor(network, size) {

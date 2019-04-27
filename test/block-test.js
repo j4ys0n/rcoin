@@ -5,7 +5,7 @@
 
 const assert = require('./util/assert');
 const common = require('./util/common');
-const {BloomFilter} = require('rfilter');
+const {BloomFilter} = require('bfilter');
 const {BufferMap} = require('buffer-map');
 const Block = require('../lib/primitives/block');
 const MerkleBlock = require('../lib/primitives/merkleblock');

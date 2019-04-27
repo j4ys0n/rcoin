@@ -4,7 +4,7 @@
 'use strict';
 
 const assert = require('./util/assert');
-const random = require('rcrypto/lib/random');
+const random = require('bcrypto/lib/random');
 const MempoolEntry = require('../lib/mempool/mempoolentry');
 const Mempool = require('../lib/mempool/mempool');
 const WorkerPool = require('../lib/workers/workerpool');

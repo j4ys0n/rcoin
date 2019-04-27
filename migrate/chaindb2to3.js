@@ -16,11 +16,11 @@ if (process.argv.indexOf('-h') !== -1
 }
 
 const assert = require('assert');
-const rdb = require('rdb');
-const hash256 = require('rcrypto/lib/hash256');
-const BN = require('rcrypto/lib/bn.js');
-const bio = require('rufio');
-const LRU = require('rlru');
+const rdb = require('bdb');
+const hash256 = require('bcrypto/lib/hash256');
+const BN = require('bcrypto/lib/bn.js');
+const bio = require('bufio');
+const LRU = require('blru');
 const {BufferMap} = require('buffer-map');
 const util = require('../lib/utils/util');
 const OldCoins = require('./coins/coins');

@@ -1,6 +1,6 @@
 'use strict';
 
-const Logger = require('rlgr');
+const Logger = require('blgr');
 const FullNode = require('../../lib/node/fullnode');
 const Amount = require('../../lib/rvn/amount');
 const plugin = require('../../lib/wallet/plugin');

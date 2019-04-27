@@ -1,8 +1,8 @@
 'use strict';
 
-const ChaCha20 = require('rcrypto/lib/chacha20');
-const Poly1305 = require('rcrypto/lib/poly1305');
-const hash256 = require('rcrypto/lib/hash256');
+const ChaCha20 = require('bcrypto/lib/chacha20');
+const Poly1305 = require('bcrypto/lib/poly1305');
+const hash256 = require('bcrypto/lib/hash256');
 const bench = require('./bench');
 
 console.log('note: rate measured in kb/s');

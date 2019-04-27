@@ -1,7 +1,7 @@
 'use strict';
 
 const rcoin = require('../..');
-const random = require('rcrypto/lib/random');
+const random = require('bcrypto/lib/random');
 
 function dummy() {
   const hash = random.randomBytes(32);

@@ -1,7 +1,7 @@
 'use strict';
 const rcoin = require('../..').set('main');
 
-const Logger = require('rlgr');
+const Logger = require('blgr');
 
 // Setup logger to see what's Rcoin doing.
 const logger = new Logger({

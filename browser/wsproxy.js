@@ -4,7 +4,7 @@ const assert = require('assert');
 const net = require('net');
 const EventEmitter = require('events');
 const rsock = require('rsock');
-const IP = require('rinet');
+const IP = require('binet');
 
 class WSProxy extends EventEmitter {
   constructor(options) {

@@ -1,8 +1,8 @@
 'use strict';
 
 const assert = require('assert');
-const rdb = require('rdb');
-const bio = require('rufio');
+const rdb = require('bdb');
+const bio = require('bufio');
 
 assert(process.argv.length > 2, 'Please pass in a database path.');
 

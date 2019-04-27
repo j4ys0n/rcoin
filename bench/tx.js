@@ -1,6 +1,6 @@
 'use strict';
 
-const random = require('rcrypto/lib/random');
+const random = require('bcrypto/lib/random');
 const Address = require('../lib/primitives/address');
 const TX = require('../lib/primitives/tx');
 const Script = require('../lib/script/script');

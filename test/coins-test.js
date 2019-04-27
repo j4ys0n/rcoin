@@ -3,7 +3,7 @@
 
 'use strict';
 
-const bio = require('rufio');
+const bio = require('bufio');
 const assert = require('./util/assert');
 const Output = require('../lib/primitives/output');
 const Input = require('../lib/primitives/input');

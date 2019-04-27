@@ -7,8 +7,8 @@ const Input = require('../lib/primitives/input');
 const Output = require('../lib/primitives/output');
 const Outpoint = require('../lib/primitives/outpoint');
 const TX = require('../lib/primitives/tx');
-const random = require('rcrypto/lib/random');
-const secp256k1 = require('rcrypto/lib/secp256k1');
+const random = require('bcrypto/lib/random');
+const secp256k1 = require('bcrypto/lib/secp256k1');
 const flags = Script.flags;
 
 let consensus = null;

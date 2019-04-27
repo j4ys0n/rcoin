@@ -4,3 +4,4 @@ docker_data/
 browser/rcoin*
 npm-debug.log
 coverage/
+scratch/

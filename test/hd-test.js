@@ -3,9 +3,9 @@
 
 'use strict';
 
-const {base58} = require('rstring');
-const pbkdf2 = require('rcrypto/lib/pbkdf2');
-const sha512 = require('rcrypto/lib/sha512');
+const {base58} = require('bstring');
+const pbkdf2 = require('bcrypto/lib/pbkdf2');
+const sha512 = require('bcrypto/lib/sha512');
 const assert = require('./util/assert');
 const HD = require('../lib/hd');
 const vectors = require('./data/hd.json');

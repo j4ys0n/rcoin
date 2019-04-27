@@ -4,8 +4,8 @@
 'use strict';
 
 const Validator = require('bval');
-const {base58} = require('rstring');
-const {encoding} = require('rufio');
+const {base58} = require('bstring');
+const {encoding} = require('bufio');
 const assert = require('./util/assert');
 const Amount = require('../lib/rvn/amount');
 const fixed = require('../lib/utils/fixed');

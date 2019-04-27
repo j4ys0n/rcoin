@@ -4,9 +4,9 @@
 'use strict';
 
 const {inspect} = require('util');
-const {encoding} = require('rufio');
+const {encoding} = require('bufio');
 const assert = require('./util/assert');
-const random = require('rcrypto/lib/random');
+const random = require('bcrypto/lib/random');
 const util = require('../lib/utils/util');
 const consensus = require('../lib/protocol/consensus');
 const TX = require('../lib/primitives/tx');
@@ -20,7 +20,7 @@ const Input = require('../lib/primitives/input');
 const CoinView = require('../lib/coins/coinview');
 const KeyRing = require('../lib/primitives/keyring');
 const Address = require('../lib/primitives/address');
-const BufferWriter = require('rufio').BufferWriter;
+const BufferWriter = require('bufio').BufferWriter;
 const common = require('./util/common');
 
 const validTests = require('./data/tx-valid.json');

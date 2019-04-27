@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('assert');
-const rdb = require('rdb');
+const rdb = require('bdb');
 const layout = require('../lib/blockchain/layout');
 
 // changes:
